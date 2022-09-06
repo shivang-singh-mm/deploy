@@ -1,0 +1,26 @@
+{
+  "name": "integrate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node server.js",
+    "server": "cd server && node server.js",
+    "client": "cd client && npm start",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LastComrade/11-mantras.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LastComrade/11-mantras/issues"
+  },
+  "homepage": "https://github.com/LastComrade/11-mantras#readme",
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  }
+}
